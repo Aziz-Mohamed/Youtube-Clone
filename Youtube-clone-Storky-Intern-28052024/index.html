@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/CSS Styles/normalization.css">
+    <link rel="stylesheet" href="/CSS Styles/general.css">
+    <link rel="stylesheet" href="/CSS Styles/header.css">
+    <link rel="stylesheet" href="/CSS Styles/sidebar.css">
+    <link rel="stylesheet" href="/CSS Styles/video.css">
+    <link rel="stylesheet" href="/CSS Styles/utilities.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+    <title>Youtube Clone</title>
+    
+</head>
+<body>
+
+    <header class="header flex justify-content-space-between">
+        <div class="left-section flex justify-content-start align-item-center">
+            <img class="burger-menu cursor-pointer" src="/icons/hamburger-menu.svg" alt="hamburger menu">
+            <img class="youtube-logo cursor-pointer" src="/icons/youtube-logo.svg" alt="youtube logo">
+        </div>
+        <div class="middle-section flex justify-content-center align-item-center">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button flex justify-content-center align-item-center position-relative">
+                <img class="search-icon" src="/icons/search.svg" alt="Search Icon">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button flex justify-content-center align-item-center">
+                <img class="voice-search-icon flex justify-content-center align-item-center position-relative" src="/icons/voice-search-icon.svg" alt="voice search icon">
+                <div class="tooltip">Voice Search</div>
+            </button>
+        </div>
+        <div class="right-section flex justify-content-space-between align-item-center">
+            <div class="upload-icon-container cursor-pointer flex justify-content-center align-item-center position-relative">
+                <img class="upload-icon" src="icons/upload.svg" alt="upload icon" >
+                <div class="tooltip">Upload</div>
+            </div>
+            <div class="youtube-apps cursor-pointer">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="youtube apps icon">
+                <div class="tooltip">Youtube Apps</div>
+            </div>
+            <div class="notifications-icon-container position-relative cursor-pointer">
+                <img class="notifications-icon" src="icons/notifications.svg" alt="notifications icon" >
+                <div class="notifications-count position-absolute">3</div>
+                <div class="tooltip">Notifications</div>
+            </div>
+            <img class="current-user-picture cursor-pointer " src="channel-pictures/my-channel.jpeg" alt="current user picture" >
+        </div>
+    </header>
+
+
+    <nav class="sidebar" >
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/home.svg" alt="">
+            <p>Home</p>
+        </div>
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/explore.svg" alt="">
+            <p>Explore</p>
+        </div>
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/subscriptions.svg" alt="">
+            <p>Subscriptions</p>
+        </div>
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/originals.svg" alt="">
+            <p>Originals</p>
+        </div>
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/youtube-music.svg" alt="">
+            <p>Youtube Music</p>
+        </div>
+        <div class="flex justify-content-center align-item-center cursor-pointer flex-direction-column">
+            <img src="/icons/library.svg" alt="">
+            <p>Library</p>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="grid-container">
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-2.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-5.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-4.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card flex justify-content-center align-item-center flex-direction-column" >
+                <div class="thumbnail position-relative w-100 object-fit-cover ">
+                    <img class="w-100" src="thumbnails/thumbnail-1.webp" alt="">
+                    <p class="position-absolute"> 14:20</p>
+                </div>
+                <div class="video-info-row  w-100 " >
+                    <div class="channel-profile-picture">
+                        <img src="channel-pictures/channel-1.jpeg" alt="Channel-profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title font-size-14 font-weight-500 line-height-20">
+                            <a class="video-link" href="#">Try Not To Laugh Challenge #9</a>
+                        </p>
+                        <p class="channel-name font-size-12 font-weight-400 line-height-20 m-top-8">
+                            <a class="channel-link" href="#">Markiplier</a>
+                        </p>
+                        <p class="video-stats font-size-12 font-weight-400 line-height-20"> 3.4M views 	&#183;  6 months ago </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
+
+

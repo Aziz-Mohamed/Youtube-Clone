@@ -1,0 +1,21 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+.sidebar div{
+    height: 74px;
+}
+.sidebar div img{
+    height: 24px;
+    margin: 8px 5px;
+}
+.sidebar div p{
+    font-size: 10px;
+}
+
